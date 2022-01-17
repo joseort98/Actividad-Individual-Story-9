@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es -ES">
+  <!-- lang para el idioma y -ES par ael pais -->
+  <head>
+    <meta charset="UTF-8" />
+    <!--Uso del código UTF8-->
+    <meta name="author" content="Cesur Toys" />
+    <!--Nombre de nuestro trabajo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Cesur Toys</title>
+    <!-- Enlace para vincular css-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="generic.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function abrirnav() {
+        document.getElementById("navegacion").style.width = "250px";
+        document.getElementById("menu").style.marginLeft = "250px";
+      }
+
+      function cerrarnav() {
+        document.getElementById("navegacion").style.width = "0";
+        document.getElementById("menu").style.marginLeft = "0";
+      }
+    </script>
+  </head>
+  <body background="fondojugue.jpg">
+    <div id="navegacion" class="desliza">
+      <a href="javascript:void(0)" onclick="cerrarnav()">&times;</a>
+      <a href="index3.html">Página Principal</a>
+      <a href="aboutUs3.html">Quiénes somos?</a>
+      <a href="services3.html">Qué vendemos?</a>
+      <a href="free3.html">Página Libre</a>
+    </div>
+    <nav class="navegarriba">
+      <a href="#" class="abrir" onclick="abrirnav()">
+        <svg width="30" height="30" id="icoOpen">
+          <path d="M0,5 30,5" stroke="tomato" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="rgb(241, 220, 122)" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="tomato" stroke-width="5" />
+        </svg>
+      </a>
+    </nav>
+    <img class="centrado" id="logo" src="logo.PNG" />
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="service1.jpg"
+            alt="virus"
+            class="d-block"
+            style="width: 100%;"
+          />
+          <div class="carousel-caption">
+            <h3>Juego Virus<span>14,99&euro;</span></h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="service2.jpg"
+            alt="damas"
+            class="d-block"
+            style="width: 100%;"
+          />
+          <div class="carousel-caption">
+            <h3>Juegos Damas Magneticoica<span>5,25&euro;</span></h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="service3.jpg"
+            alt="pony"
+            class="d-block"
+            style="width: 100%;"
+          />
+          <div class="carousel-caption">
+            <h3>My Little Pony Aventuras de Cristal<span>10,99&euro;</span></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </body>
+</html>

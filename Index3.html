@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es -ES">
+  <!-- lang para el idioma y -ES par ael pais -->
+  <head>
+    <meta charset="UTF-8" />
+    <!--Uso del código UTF8-->
+    <meta name="author" content="Cesur Toys" />
+    <!--Nombre de nuestro trabajo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Cesur Toys</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script>
+    function abrirnav() {
+      document.getElementById("navegacion").style.width = "250px";
+      document.getElementById("menu").style.marginLeft = "250px";
+    }
+
+    function cerrarnav() {
+      document.getElementById("navegacion").style.width = "0";
+      document.getElementById("menu").style.marginLeft = "0";
+    }
+  </script>
+  <body background="fondojugue.jpg">
+    <div id="navegacion" class="desliza">
+      <a href="javascript:void(0)" onclick="cerrarnav()">&times;</a>
+      <a href="contact3.html">Contacte con nosotros</a>
+      <a href="aboutUs3.html">Quiénes somos?</a>
+      <a href="services3.html">Qué vendemos?</a>
+      <a href="free3.html">Página Libre</a>
+    </div>
+    <nav class="navegarriba">
+      <a href="#" class="abrir" onclick="abrirnav()">
+        <svg width="30" height="30" id="icoOpen">
+          <path d="M0,5 30,5" stroke="tomato" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="rgb(241, 220, 122)" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="tomato" stroke-width="5" />
+        </svg>
+      </a>
+    </nav>
+    <img class="centrado" id="logo" src="logo.PNG" />
+
+    <img
+      class="centrado"
+      src="index.gif"
+    />
+    <h1 class="gradiente">Bienvenidos a Cesur Toys</h1>
+    <!--bienvenidos de la página-->
+    <h2>Todos los derechos reservados &copy;</h2>
+    <!--Todos los derechos reservados de la página-->
+  </body>
+</html>
+<!--termina la página html-->

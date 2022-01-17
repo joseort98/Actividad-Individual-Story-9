@@ -1,0 +1,278 @@
+
+/*-----------------------Importación de fuentes de google---------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Prompt:wght@300&display=swap");
+/*------------------------------------BODY---------------------------------------------------------------------------*/
+body {
+  background-image: url("fondojugue.jpg");
+  font-family: "Permanent Marker", "Sans-serif";
+  font-size: 25px;
+  }
+/*--------------------------Menú lateral Común para todas las páginas--------------------------------------------------------------------*/
+.desliza {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgb(143, 233, 236);; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1.5%; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* enlaces del menu */
+.desliza a {
+  padding: 15%;
+  text-decoration: none;
+  font-size: 85%;
+  color: tomato;
+  text-shadow: -5% -5% 3% #000;
+  font-family: verdana;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Ratón por encima de los enlaces del menu */
+.desliza a:hover,
+.offcanvas a:focus {
+  color: rgb(241, 220, 122);
+  /* Position and style the close button (top right corner) */
+}
+a.abrir{
+  float:left;
+}
+
+/*---------------------------------Texto---------------------------------------------------------*/
+
+h1 {
+  font-family: "Rock Salt", "Sans-serif";
+  font-size: 30px;
+  text-align:center;
+  color: rgb(143, 233, 236);
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+  background: -webkit-linear-gradient(tomato,rgb(233, 235, 144),rgb(143, 233, 236), rgb(227, 149, 247)); /* Va cambiando el color de forma progresiva*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+.tamañonormal {font-size: 30px}
+}
+h2,
+h3,
+h4 {
+  font-family: "Irish Grover";
+  text-align: left;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+h2 {
+  font-size: 100%;
+  text-align: center;
+  color: tomato;  
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+.tamañocompleto {font-size: 100%}
+h3 {
+  font-size: 89%;
+  color: black;
+  text-align: center;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+
+}
+.tamañoh34 {font-size: 89%}
+h4 {
+  font-size: 89%;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+p {
+  font-family: "Pacifico";
+  font-size: 150%;
+  margin-top: 5%;
+  color:red;
+}
+.tamañomuygrande {font-size: 150%}
+a {
+  display: block;
+  color: rgb(227, 149, 247);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 89%;
+  -webkit-text-stroke: 0.05px black; /* Línea externa de la letra color negro*/
+}
+span{
+  color:red;
+}
+/*-----------------------------Posición----------------------------------------------------*/
+.centrado { /* Esto sirve para centrar un objeto*/
+  margin: 10% auto;
+  display: block; /*Elemento sea un solo bloque*/
+}
+.derecha { /* Esto sirve para situar a la derecha un objeto*/
+  float: right; /*Elemento se pegue a la derecha*/
+  margin-right: 5%;
+}
+/*-----------------------------Imágenes--------------------------------------------------------------- */
+img#logo { /* Tamaño y altura de la imagen del logo*/
+  width: 100%;
+  height: 100%;
+}
+img { /* Tamaño, altura y borde redondeado de las imagenes*/
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+}
+#reflex { /* Reflejar una imagen a la derecha, y que vaya desapareciendo */
+  -webkit-box-reflect: right 0% /* Reflejar una imagen a la derecha */
+    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); /* Vaya desapareciendo poco a poco  */
+    width: 50%;
+    height: 50%;
+
+}
+#transparente { /* Poner un objeto transparente*/
+  opacity: 1; 
+}
+#transparente:hover { /* Poner un objeto transaprente al situar el ratón encima*/
+  opacity: 0.5;
+}
+/*-----------------------------------Columnas------------------------------------------------------------------------------*/
+.columna { 
+  column-count: 3; /* Nº de columnas 3*/
+  column-rule-style: solid; /* Separador de las columnas línea sólida*/
+  column-rule-width: 0.5%; /* Grosor de la línea */
+  column-rule-color: tomato; /* Color de la línea*/
+  padding-right: 10%; 
+  column-width: 100%;
+  margin: 10% auto;
+  display: block;
+}
+/*-----------------------------Detalles Texto---------------------------------------------------------------------------*/
+m.superior {
+  text-decoration: overline rgb(227, 149, 247);
+}
+li#sombra {
+  text-shadow: 2px 2px 0 #aaa, 6px 6px 2px #777, 12px 12px 8px #444;
+}
+em.subrayado {
+  text-decoration: underline tomato;
+  text-transform: capitalize; /* */
+}
+em.tachado {
+  text-decoration: line-through rgb(143, 233, 236);
+}
+p.espaciado {
+  line-height: 300%;
+}
+p.espaciadoletra {
+  letter-spacing: 0.3em;
+}
+p.primeralinea {
+  text-indent: 40px;
+}
+/*-------------------------------Tablas---------------------------------------------------------------*/
+table { 
+  border: 1px solid; /* Para poner borde a la tabla*/
+  border-radius: 5px; /* borde redondeado*/
+  background-color: white; /* color fondo de la tabla*/
+  border-width: 3px;
+  border-color: black; /* color borde tabla*/
+  width: 100%;
+  border-collapse: collapse; /* para fusionar los bordes*/
+  font-size: 15px; /* tamaño de la fuente*/
+}
+td { 
+  border: 1px solid; 
+  text-align: center; /* cómo queda alineado el texto de la tabla*/
+}
+/*------------------------Formulario---------------------------------------------------------------------------------*/
+tr:nth-child(even) { /* para hacer que las filas pares estén de otro color con respecto a las impares*/
+  background-color: grey; 
+}
+
+iframe { 
+  border-bottom: 5% solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: blue;
+  width: 100%;
+  margin: 10% auto;
+  display: block;
+}/* hacer que únicamente tenga borde la parte de abajo*/
+
+.formulariocontacto {  
+  background-color: grey;
+  padding: 10%; /*hace que el rectangulo gris del formulario tenga margenes*/
+}
+
+.gruporadiobutton label, 
+.gruporadiobutton input {
+  width: 10%;
+  float: left;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] { /*botón enviar*/
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /*se cambia al color verde oscuro al situar el cursor por encima*/
+}
+
+input [type="reset"] { /*botón reset*/
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /*el tipo de cursor sea un puntero*/
+  float: right;
+}
+input [type="reset"]:hover {
+  background-color: grey
+}
+
+.tooltip .tooltiptext { /* da información extra al pasar el cursor por el elemento*/
+  visibility: hidden; /*esté en oculto*/
+  width: 50%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px; /* Esquinas*/
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;  /*indica el orden de un elemento posicionado y sus descendientes*/
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+imput [type="sexo"] {
+  white-space: pre; /* determina cómo se maneja el espacio en blanco dentro de un elemento*/
+}
